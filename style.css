@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hawa_Mahal_Final_1.jpg/1024px-Hawa_Mahal_Final_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo{
+    width: 25%;
+    text-align: center;
+}
+
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:first-child{
+    color: #00b894;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 1s ease;
+}
+
+.btnone{
+    background: white;
+    color: black;
+}
+
+.btntwo{
+    background: #00b894;
+    color: white;
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover{
+    background: white;
+    color: black;
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content: " Jaipur";}
+    20%{content: " Jaisalmer";}
+    35%{content: " Thar";}
+    60%{content: " Hawa Mahal";}
+}
